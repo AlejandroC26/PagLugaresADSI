@@ -9,44 +9,75 @@ body{
     position: absolute;
     font-family: 'Sarabun', sans-serif;
   }
-.header{
+header{
     font-family: 'Noto Sans',sans-serif;
-    display: block;
-    height: 110px;
-    background: none;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
 }
-.header .nav-content{
+header.fijo nav, header.fijo-text nav{
+    max-width: 1000px;
+    float: right;
+    height: 100%;
+}
+header.fijo nav ul, header.fijo-text nav ul{
+    overflow: hidden;
+    list-style: none;
+}
+header.fijo nav ul li, header.fijo-text nav ul li{
+    float: left;
+    height: 110px;
+}
+header.fijo nav ul li a, header.fijo-text nav ul li a{
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(87, 87, 87);
+    font-size: 1.2em;
+    height: 100%;
+    color: white;
+    padding: 0 15px;
+    display: block;
+    text-decoration: none;
+    
+}
+header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
+    height: 110px;
+    display: inline-flex;
+    align-items: center;
+}
+.menu_bar{
+    display: none;
+}
+.logo-nav{
+    position: relative;
+    background: none;
+    display: inline-flex;
+    height: 90px;
+    width: 180px;
+    align-items: center;
+}
+.contenido-nav{
     position: relative;
     display: block;
     align-items: center;
-    width: 80vw;
-    height: 100%;
+    width: 90vw;
+    height: 110px;
     background: none;
     margin: auto;
-   
 }
-.header .nav-content .logo{
+.contenido-nav .nav-logo{
+    font-family: 'Roboto Condensed';
     position: relative;
     background: none;
     display: inline-flex;
     height: 110px;
     width: 180px;
     align-items: center;
-    
+}
+.contenido-nav .nav-logo a{
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(87, 87, 87);
+    text-decoration: none;
+    font-size: 1.2em;
 }
 
-.header .nav-content .logo img{
-    width: 100%;
-}
-.header .nav-content .nav-general{
-    float: right;
-    display: block;
-    position: relative;
-    height: 110px;
-}
 .header .nav-content .nav-general a,.logo a{
     font-weight: bold;
     color: white;
@@ -54,16 +85,6 @@ body{
     text-decoration: none;
     font-size: 1.2em;
 }
-.header .nav-content .nav-general .nav_link{
-    display: inline-block;
-    padding: 0px 15px;
-}
-.header .nav-content .nav-general .nav_link .nav_text{
-    height: 110px;
-    display: inline-flex;
-    align-items: center;
-}
-
 
 
 .header2{
@@ -80,7 +101,7 @@ body{
 .header2 .nav-content{
     position: relative;
     display: block;
-    width: 80vw;
+    width: 90vw;
     height: 100%;
     background: none;
     margin: auto;
@@ -114,6 +135,7 @@ body{
     text-decoration: none;
     font-weight: bold;
     font-size: 100%;
+    font-size: 1.2em;
 }
 .header2 .nav-content .nav-general .nav_link{
     display: inline-block;
@@ -125,10 +147,16 @@ body{
     align-items: center;
 }
 .header_content{
-    padding: 120px 50px 120px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    padding: 120px 0 120px 0;
     height: calc(100% - 350px) ;
     display: flex;
     position: relative;
+}
+.element-head-container{
+    margin-left: 30%;
 }
 .element-tittle-italic{
     color: white;
@@ -144,13 +172,16 @@ body{
     background-repeat: no-repeat;
     background-size: cover ;
     background-attachment: fixed;
-    position: absolute;
-    overflow: hidden;
-    z-index: 10;
     width: 100%;
     height: 100vh;  
-    position: absolute;
-    z-index: 20;
+}
+.fijo-text{
+    background-image: url('../img/headerbackground1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-attachment: fixed;
+    width: 100%;
+    height: 75vh; 
 }
 .fixed_navbar{
     width: 100%;
@@ -169,7 +200,6 @@ body{
     visibility: hidden;
 }
 .contenido{
-    margin-top: 100vh;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -184,7 +214,6 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
-    margin-bottom: 20%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -192,6 +221,7 @@ body{
     position: relative;
     z-index: 20;
 }
+
 .element-background-overlay{
     background-color: transparent;
     background-image: linear-gradient(270deg, #182524 40%, #ad844d 93%);
@@ -232,6 +262,9 @@ body{
     color: rgb(247, 246, 242);
     font-family: 'Sarabun', sans-serif;
 }
+.element-container-info{
+    width: 100%;
+}
 .element-container-info h2{
     color: #dbaf4e;
     font-size: 2.5em;
@@ -239,7 +272,6 @@ body{
 .element-container-info-white h2{
     color: rgb(228, 227, 224);
     font-size: 2.5em;
-    
 }
 .resalt-color{
     color: #dbaf4e;
@@ -247,6 +279,7 @@ body{
 }
 .element-separador{
     height: 25px;
+    width: 100%;
 }
 .img-round{
     border-radius: 72% 26% 46% 27%;
@@ -257,7 +290,190 @@ p{
     margin-bottom: 1.5em;
 }
 
-@media(max-width:1000px){
+/* FOOTER  */
+.element-section-footer{
+    overflow: hidden;
+    width: 100%;
+    z-index: 20;
+    background-color: rgb(110, 110, 110);
+    font-size: 1.1em;
+}
+.element-footer-container{
+    padding: 60px 50px 60px 50px;
+    display: flex;
+}
+.element-footer-container .element-section-column{
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+}
+.elemente-section-row{
+    margin: 10px 0;
+}
+.elemente-section-row a{
+    color: white;
+    text-decoration: none;
+}
+.element-footer-container .element-section-column .btn-footer-info{
+    width: 35px;
+    height: 35px;
+    border: solid 1px white;
+    border-radius: 45%;    
+    display: inline-block;
+    margin: 0 5px;
+}
+.element-footer-container .element-section-footer-nav{
+    display: flex;
+    padding: 0 10px 0 10px;
+    width: 90%;
+}
+.element-section-footer-nav .elemennt-section-block{
+    display: inline-block;
+    padding: 0 20px 10px 0;
+    width: 30%;
+    height: 90%;
+}
+.title-footer{
+    color: rgb(207, 207, 207);
+}
+.btn-footer-info a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+.element-section-sub-footer{
+    overflow: hidden;
+    padding: 20px 60px;
+    width: calc(100%-80px);
+    height: 100%;
+    position: relative;
+    z-index: 20;
+    background-color: #202020;
+    color: white;
+    font-weight: 500;
+    font-family: 'Sarabun', sans-serif;
+}
+
+
+@media screen and (min-width:1000px){
+    li a.open-close div.ocult{
+        background: #024959;
+        overflow: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .nav-content .disappeard{
+        overflow: hidden;
+        width: 0px;
+        height: 0px;
+        float: right;
+    }
+}
+@media screen and (max-width:1000px){
+    header.fijo nav, header.fijo-text nav{
+        width: 80%;
+        height: 100%;
+        left: -100%;
+        margin: 0;
+        top: 0;
+        position: fixed;
+        z-index: 1000;
+        background-color: rgb(255, 253, 249);
+    }
+
+    header.fijo nav ul li, header.fijo-text nav ul li{
+        /*El display block se usa para que el li abarque todo el bloque de ancho*/
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgb(150, 150, 150,20%);
+        border-right: 1px solid rgba(150, 150, 150,20%);
+        height: 70px;
+    }
+    header.fijo nav ul li a, header.fijo-text nav ul li a{
+        padding: 0 20px;
+        color: #d3a238;      
+        text-shadow: none;
+    }
+    header.fijo nav ul li.cross, header.fijo-text nav ul li.cross{
+        height: 40px;
+    }
+    header.fijo nav ul li.cross a, header.fijo-text nav ul li.cross a{
+        color: #ecac20;
+        float: right;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
+        height: 70px;
+    } 
+    .logo{
+        display: none;
+    }
+    .contenido-nav{
+        height: 0px;
+    }
+    .contenido-nav .nav-logo{
+        display: none;
+    }
+    .menu_bar{
+        display: block;
+        width: 100%;
+    }
+    .menu_bar .bt-menu{
+        height: 110px;
+        width: 80vw;
+        margin: 0 auto;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2em;       
+        text-shadow: 2px 2px 2px rgb(87, 87, 87);
+       -moz-box-sizing: border-box;
+    }
+    .menu_bar .bt-menu .nav-logo{
+        font-family: 'Roboto Condensed';
+        position: relative;
+        background: none;
+        display: inline-flex;
+        height: 110px;
+        width: 180px;
+        align-items: center;
+    }
+    .menu_bar .content-iconmenu{
+        float:right;
+        font-size: 50px;
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+    }
+    .nav-content .nav-general{
+        overflow: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .content-icon-menu{
+        float: right;
+        font-size: 50px;
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+    }
+    .content-icon-menu .btn-icon-menu{
+        color: #d3a238;  
+        float: right;
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px rgb(87, 87, 87);
+    }
+
     .contenido{
         height: 100%;
     }
@@ -267,7 +483,6 @@ p{
     .elemento-hight-container{
         display: block;
     }
-    
 }
 @keyframes MostrarArriba{
     0%{

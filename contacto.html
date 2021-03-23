@@ -6,7 +6,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap" rel="stylesheet">
- 
+    <link rel="stylesheet" href="css/contactenos.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="fonts/style.css">
     <link rel="icon" href="img/mundo.png" type="image/png">
@@ -28,7 +28,7 @@
             </div>
         </div>
     </div>
-   <header class="fijo">
+   <header class="fijo-text">
         <div class="menu_bar open-close">
             <a href="#" class="bt-menu"><div class="content-iconmenu"><span class="icon-menu"></span></div><div class="nav-logo">LUGARES <br>FANTÁSTICOS</div></a>
         </div>
@@ -47,56 +47,63 @@
         </div>     
         <div class="header_content">        
             <div class="element-head-container">
-                <span class="element-tittle-italic">¡Los <span class="resalt-color">mejores</span> destinos del mundo en un solo lugar!</span> 
+                <span class="element-tittle-italic">Contacto</span> 
             </div>             
         </div>    
    </header>    
     <div class="contenido" id="contenido">
         <div class="elemento-hight-container">
-            <div class="element-element-column">
+            <div class="element-content-form">
                 <div class="element-container-info">
-                    <h2>Uluru, un monolito caprichoso en Australia</h1>                               
+                    <h2>Ingrese su información de contacto</h1>                               
                 </div>
                 <div class="element-separador">
                     <hr style="width: 25%; background: rgb(223, 171, 1); height: 4px; border: none; border-radius: 2px;">  
                 </div>
-                <div class="element-container-content-text">
-                    <p>Uluru es un lugar sagrado para los aborígenes australianos y desde 1987 es Patrimonio de la Humanidad.​ También es conocida como el ombligo del mundo. Sin embargo, no es la primera vez que los aborígenes australianos denominaron así a otras montañas sagradas.</p>
-                    <p>Uluru es uno de los iconos naturales más famosos de Australia. La formación rocosa se eleva 348 metros sobre el terreno circundante, y 863 m. sobre el nivel del mar, aunque la mayor parte se encuentra bajo tierra. El contorno del monolito mide 9.4 km. Tanto Uluru como Kata Tjuta tienen una gran significado cultural para los habitantes tradicionales Aṉangu, que organizan visitas guiadas para informar a los turistas sobre la fauna y flora locales, el monte bajo, y las leyendas autóctonas.</p>
-                    <p>La superficie del monolito cambia de color según la inclinación de los rayos solares, tanto a lo largo del día como en las diferentes estaciones del año. Es particularmente famosa la imagen de Uluru al atardecer, cuando se vuelve de un color rojo brillante. A pesar de que la lluvia es poco frecuente en esta zona semiárida, durante los períodos húmedos la roca adquiere una tonalidad gris plateada, con franjas negras debidas a las algas que crecen en los cursos de agua.</p>
+                <div >
+                    <form action="registrar-info.php" method="get" class="content-form">
+                        <fieldset>
+                            <legend>Ingrese la información</legend>
+                            <!--Ingrese sus nombre:<br>-->
+                            <input type="text" name="nombres" size="40" maxlength="50" placeholder="Ingrese su Nombre" class="form-lenght">
+                            <br><br>
+                            <!--Ingrese sus apellidos:<br>-->
+                            <input type="text" name="apellidos" size="40" maxlength="50" placeholder="Ingrese su Apellido" class="form-lenght">
+                            <br><br>
+                            Ingrese su inquietud:<br>
+                            <textarea name="peticion" cols="40" rows="5" class="form-lenght"></textarea>
+                            <br><br>
+                            Género:<br>
+                            <input type="radio" name="genero" value="masculino">Masculito<br>
+                            <input type="radio" name="genero" value="femenino">Femenino<br>
+                            <input type="radio" name="genero" value="indefinido">Indeterminado<br><br>
+                            Lugares que le gustaría visitar:<br>
+                            <input type="checkbox" name="dispositvo" value="sanagustin">San Agustón<br>
+                            <input type="checkbox" name="dispositvo" value="rivera">Rivera<br>
+                            <input type="checkbox" name="dispositvo" value="palermo">Palermo<br>
+                            <input type="checkbox" name="dispositvo" value="gigante">Gigante<br><br>
+                            Ciudad de residencia: <br>
+                            <select name="ciudad" class="form-lenght">
+                                <option value="Pitalito">Pitalito</option>
+                                <option value="San Agustin">San Agustín</option>
+                                <option value="Bogota">Bogotá</option>
+                                <option value="Neiva">Neiva</option>
+                                <option value="Armenia">Armenia</option>
+                                <option value="Saladoblanco">Saladoblanco</option>
+                                <option value="Elias">Elias</option>
+                                <option value="Acevedo">Acevedo</option>
+                                <option value="Otra">Otra</option>
+                            </select>
+                            <br><br>          
+                        
+                            <br>
+                            <input class="btn_save" type="submit" value="Enviar">
+                        </fieldset>
+                    </form>
                 </div>
-            </div>
-            <div class="element-element-column">
-              <img class="img-round" src="https://farm1.static.flickr.com/74/199756027_6d5079d7a2.jpg?v=0" alt="">  
             </div>
         </div>
     </div>
-    <section class="element-seccion">
-        <div class="element-background-overlay"></div>
-        <div class="elemento-hight-container">
-            <div class="element-element-column">
-                <div class="element-width-container">
-                    <div class="elementor-image">
-                        <img class="m1" src="img/cañonantilope2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="element-element-column">
-                <div class="element-container-info-white">
-                    <h2>Cañón del Antílope</h1>                               
-                </div>
-                <div class="element-separador">
-                    <hr style="width: 25%; background: rgb(223, 171, 1); height: 4px; border: none; border-radius: 2px;">  
-                </div>
-                <div class="element-container-content-text-white">
-                    <p>Es un cañón de ranura del Suroeste de Estados Unidos, uno de los más visitados y fotografiados del mundo. Está localizado cerca de la ciudad de Page, en el condado de Coconino, en el norte del estado de Arizona. Este cañón está situado en una reserva de indígenas navajos. De hecho, las visitas a este cañón han de hacerse con un guía navajo.</p>
-                    <p>La formación geológica se ha ido horadando debido al paso de corrientes de agua a través de un proceso de epigénesis durante miles de años, y sus paredes llegan a alcanzar los 40 metros de altura en algunos puntos. Consiste en dos formaciones separadas, denominadas individualmente como "cañón del Antílope superior" y "cañón del Antílope inferior".</p>
-                    <p>Una de las razones por las que el cañón solo puede visitarse con guía es el peligro de inundaciones relámpago, ya que las lluvias torrenciales en la región pueden provocar la inundación total del cañón en cuestión de minutos (principalmente por corrientes de agua que se originan en regiones de más altitud). De hecho, uno de los motivos por los que este cañón ganó en popularidad fue la muerte de once turistas el 12 de agosto de 1997. El único superviviente de aquella catástrofe fue el guía.</p>
-                </div>
-            </div>
-        </div>
-        
-    </section>
     <section class="element-section-footer">
         <div class="element-footer-container">
             <div class="element-section-column">

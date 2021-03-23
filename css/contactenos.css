@@ -1,0 +1,34 @@
+.element-content-form{
+    width: 100%;
+}
+form.content-form{
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+}
+fieldset{
+    border-radius: 7px;
+    padding: 5px;
+    background-color: white;
+}
+legend{
+    background-color: white;
+    border-radius: 7px;
+    padding: 5px;
+    border: solid 2px gray;
+}
+.form-lenght{
+    width: 98%;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+.btn_save{
+    float: right;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px gray;
+    background: rgb(255, 202, 55);
+    font-weight: bold;
+    color: gray;
+}

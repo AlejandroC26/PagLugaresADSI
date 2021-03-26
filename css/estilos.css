@@ -150,13 +150,14 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
-    padding: 120px 0 120px 0;
+    padding: 10% 0;
     height: calc(100% - 350px) ;
     display: flex;
     position: relative;
 }
 .element-head-container{
-    margin-left: 30%;
+    width: 100%;
+    height: 100%;
 }
 .element-tittle-italic{
     color: white;
@@ -166,7 +167,10 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     font-family: 'Roboto Condensed';   
     text-shadow: 2px 2px 2px rgb(87, 87, 87);
 }
-
+.element-head-container-tittle{
+    margin-left: auto;
+    width: 70%;
+}
 .fijo{
     background-image: url('../img/headerbackground1.jpg');
     background-repeat: no-repeat;
@@ -231,7 +235,7 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     height: 100%;
 }
 .elemento-hight-container{
-    padding: 120px 50px 120px 50px;
+    padding: 5% 5%;
     height: calc(100% - 240px) ;
     display: flex;
     position: relative;
@@ -244,6 +248,7 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     align-items: center;
 }
 .elementor-image .m1{
+    max-width: 400px;
     border-radius: 10px;
     width: 400px;
     height: 450px;
@@ -254,11 +259,11 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     padding: 15px;
 }
 .element-container-content-text{
-    font-size: 1.2em;
+    font-size: 100%;
     color: #222222;
 }
 .element-container-content-text-white{
-    font-size: 1.2em;
+    font-size: 100%;
     color: rgb(247, 246, 242);
     font-family: 'Sarabun', sans-serif;
 }
@@ -278,6 +283,7 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     font-size: 1.1em;
 }
 .element-separador{
+    margin-top: 10px;
     height: 25px;
     width: 100%;
 }
@@ -359,7 +365,13 @@ p{
     font-family: 'Sarabun', sans-serif;
 }
 
-
+@media screen and (max-width:750px){
+    .element-head-container-tittle{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
 @media screen and (min-width:1000px){
     li a.open-close div.ocult{
         background: #024959;
@@ -479,9 +491,23 @@ p{
     }
     .element-element-column{
         width: 100%;
+        padding: 0;
     }
     .elemento-hight-container{
         display: block;
+    }
+    .element-head-container-tittle{
+        margin: 15% 0;
+    }
+    .element-tittle-italic{
+        font-size: 3em;
+    }
+    .elementor-image{
+        width: 100%;
+    }
+    .elementor-image .m1{     
+        width: 100%;
+        height: auto;
     }
 }
 @keyframes MostrarArriba{

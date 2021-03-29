@@ -235,7 +235,8 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     height: 100%;
 }
 .elemento-hight-container{
-    padding: 5% 5%;
+    margin: auto;
+    max-width: 1240px;
     height: calc(100% - 240px) ;
     display: flex;
     position: relative;
@@ -248,10 +249,9 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     align-items: center;
 }
 .elementor-image .m1{
-    max-width: 400px;
+    max-width: 1240px;
     border-radius: 10px;
     width: 400px;
-    height: 450px;
 }
 .element-element-column{
     width: 49%;
@@ -299,18 +299,18 @@ p{
 /* FOOTER  */
 .element-section-footer{
     overflow: hidden;
-    width: 100%;
     z-index: 20;
     background-color: rgb(110, 110, 110);
+    padding: 60px 30px 60px 30px;
     font-size: 1.1em;
 }
 .element-footer-container{
-    padding: 60px 50px 60px 50px;
+    max-width: 1240px;
     display: flex;
+    margin: auto;
 }
 .element-footer-container .element-section-column{
     display: inline-block;
-    height: 100%;
     width: 30%;
 }
 .elemente-section-row{
@@ -355,7 +355,6 @@ p{
 .element-section-sub-footer{
     overflow: hidden;
     padding: 20px 60px;
-    width: calc(100%-80px);
     height: 100%;
     position: relative;
     z-index: 20;
@@ -363,6 +362,13 @@ p{
     color: white;
     font-weight: 500;
     font-family: 'Sarabun', sans-serif;
+}
+.padding-auto{
+    padding: 5% 5%;
+}
+.contenido-nav, .header_content, .elemento-content, .nav-content, .sub-footer-content{
+    max-width: 1240px;
+    margin: auto;
 }
 
 @media screen and (max-width:750px){
@@ -384,6 +390,11 @@ p{
         width: 0px;
         height: 0px;
         float: right;
+    }
+    .min-width{
+        display: block;
+        height: 0;
+        visibility: hidden;
     }
 }
 @media screen and (max-width:1000px){
@@ -455,7 +466,6 @@ p{
         background: none;
         display: inline-flex;
         height: 110px;
-        width: 180px;
         align-items: center;
     }
     .menu_bar .content-iconmenu{
@@ -493,21 +503,58 @@ p{
         width: 100%;
         padding: 0;
     }
-    .elemento-hight-container{
-        display: block;
+    .padding-auto{
+        padding: 12% 10%;
     }
-    .element-head-container-tittle{
-        margin: 15% 0;
+    .elemento-hight-container{
+        display: block;      
     }
     .element-tittle-italic{
         font-size: 3em;
     }
     .elementor-image{
         width: 100%;
+        margin: 20px 0;
     }
     .elementor-image .m1{     
         width: 100%;
         height: auto;
+        border-radius: 10px;
+    }
+    .element-section-footer{
+        font-size: 100%;
+    }
+    .element-footer-container{
+        display: block;
+    }
+    .element-footer-container .element-section-column{
+        display: block;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .element-footer-container .element-section-footer-nav{
+        padding: 0;
+        padding-top: 10px;
+    }
+    .hidden{
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:360px){
+    .element-tittle-italic{
+        font-size: 2.7em;
+    }
+    .elemento-hight-container{
+        display: block;        
+    }
+    .padding-auto{
+        padding: 20% 10%;
+    }
+    .sub-footer-content{
+        padding: 35px 30px;
     }
 }
 @keyframes MostrarArriba{

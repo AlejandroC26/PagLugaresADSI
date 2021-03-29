@@ -287,6 +287,10 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     height: 25px;
     width: 100%;
 }
+.element-image-content{
+    margin: auto;
+    max-width: 600px;
+}
 .img-round{
     border-radius: 72% 26% 46% 27%;
     width: 100%;
@@ -364,7 +368,7 @@ p{
     font-family: 'Sarabun', sans-serif;
 }
 .padding-auto{
-    padding: 5% 5%;
+    padding: 150px 50px;
 }
 .contenido-nav, .header_content, .elemento-content, .nav-content, .sub-footer-content{
     max-width: 1240px;
@@ -450,7 +454,7 @@ p{
     }
     .menu_bar .bt-menu{
         height: 110px;
-        width: 80vw;
+        width: 90vw;
         margin: 0 auto;
         display: block;
         color: #fff;
@@ -504,7 +508,7 @@ p{
         padding: 0;
     }
     .padding-auto{
-        padding: 12% 10%;
+        padding: 70px 30px 50px 50px;
     }
     .elemento-hight-container{
         display: block;      
@@ -536,6 +540,7 @@ p{
     .element-footer-container .element-section-footer-nav{
         padding: 0;
         padding-top: 10px;
+        width: auto;
     }
     .hidden{
         display: block;

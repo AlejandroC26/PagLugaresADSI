@@ -305,7 +305,7 @@ p{
     overflow: hidden;
     z-index: 20;
     background-color: rgb(110, 110, 110);
-    padding: 60px 30px 60px 30px;
+    padding: 60px 50px 60px 50px;
     font-size: 1.1em;
 }
 .element-footer-container{
@@ -461,7 +461,7 @@ p{
         text-decoration: none;
         font-weight: bold;
         font-size: 1.2em;       
-        text-shadow: 2px 2px 2px rgb(87, 87, 87);
+        text-shadow: 1px 1px 1px rgb(87, 87, 87);
        -moz-box-sizing: border-box;
     }
     .menu_bar .bt-menu .nav-logo{
@@ -474,7 +474,7 @@ p{
     }
     .menu_bar .content-iconmenu{
         float:right;
-        font-size: 50px;
+        font-size: 40px;
         height: 100%;
         display: inline-flex;
         align-items: center;
@@ -486,7 +486,7 @@ p{
     }
     .content-icon-menu{
         float: right;
-        font-size: 50px;
+        font-size: 40px;
         height: 100%;
         display: inline-flex;
         align-items: center;
@@ -497,7 +497,7 @@ p{
         display: inline-flex;
         align-items: center;
         text-decoration: none;
-        text-shadow: 2px 2px 2px rgb(87, 87, 87);
+        text-shadow: 1px 1px 1px rgb(87, 87, 87);
     }
 
     .contenido{

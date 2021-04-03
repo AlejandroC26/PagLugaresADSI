@@ -150,7 +150,7 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
-    padding: 10% 0;
+    padding: 120px 0;
     height: calc(100% - 350px) ;
     display: flex;
     position: relative;
@@ -177,7 +177,9 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     background-size: cover ;
     background-attachment: fixed;
     width: 100%;
-    height: 100vh;  
+    height: 100%;  
+    padding-bottom: 120px;
+    min-height: 85vh;
 }
 .fijo-text{
     background-image: url('../img/headerbackground1.jpg');
@@ -185,7 +187,7 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     background-size: cover ;
     background-attachment: fixed;
     width: 100%;
-    height: 75vh; 
+    height: 100%; 
 }
 .fixed_navbar{
     width: 100%;
@@ -296,6 +298,13 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     width: 100%;
     max-width: 600px;
 }
+.big-text{
+    font-size: 1.3em;
+    color: #353535;
+}
+h2.sub-title{
+    font-size: 1.8em;
+}
 p{
     margin-bottom: 1.5em;
 }
@@ -375,6 +384,19 @@ p{
     margin: auto;
 }
 
+
+textarea{
+    resize: none;
+}
+  
+  input:focus, input.form-control:focus,textarea:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
 @media screen and (max-width:750px){
     .element-head-container-tittle{
         margin: 0;
@@ -401,6 +423,7 @@ p{
         visibility: hidden;
     }
 }
+
 @media screen and (max-width:1000px){
     header.fijo nav, header.fijo-text nav{
         width: 80%;
@@ -555,12 +578,13 @@ p{
     .elemento-hight-container{
         display: block;        
     }
-    .padding-auto{
+    .padding-auto, .element-section-footer{
         padding: 20% 10%;
     }
     .sub-footer-content{
         padding: 35px 30px;
     }
+    
 }
 @keyframes MostrarArriba{
     0%{

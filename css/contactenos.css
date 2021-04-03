@@ -129,7 +129,7 @@ select.form-lenght{
     width: 450px;
     background: #fff;
     padding: 30px;
-    display: inline-block;
+    display: inline-flex;
   }
 
   .content-wraper-options{
@@ -145,4 +145,14 @@ select.form-lenght{
   }
   .content-wraper-options .input-option .content-options{
     width: 100%;
+  }
+
+  @media screen and (max-width:1000px){
+    .content-wraper-options{
+      display: block;
+    }
+    .wrapper-form-options{
+      width: 100%;
+      display: flex;
+    }
   }

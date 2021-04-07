@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos</title>
+    <link rel="stylesheet" href="css/contactenos.css">
+</head>
+<body>
+    <h1 class="center">Contáctenos</h1>
+    <form action="registrar-info.php" method="get" class="content-form">
+        <fieldset>
+            <legend>Ingrese la información</legend>
+            <!--Ingrese sus nombre:<br>-->
+            <input type="text" name="nombres" size="40" maxlength="50" placeholder="Ingrese su Nombre" class="form-lenght">
+            <br><br>
+            <!--Ingrese sus apellidos:<br>-->
+            <input type="text" name="apellidos" size="40" maxlength="50" placeholder="Ingrese su Apellido" class="form-lenght">
+            <br><br>
+            Ingrese su inquietud:<br>
+            <textarea name="peticion" cols="40" rows="5" class="form-lenght"></textarea>
+            <br><br>
+            Género:<br>
+            <input type="radio" name="genero" value="masculino">Masculito<br>
+            <input type="radio" name="genero" value="femenino">Femenino<br>
+            <input type="radio" name="genero" value="indefinido">Indeterminado<br><br>
+            Lugares que le gustaría visitar:<br>
+            <input type="checkbox" name="dispositvo" value="sanagustin">San Agustón<br>
+            <input type="checkbox" name="dispositvo" value="rivera">Rivera<br>
+            <input type="checkbox" name="dispositvo" value="palermo">Palermo<br>
+            <input type="checkbox" name="dispositvo" value="gigante">Gigante<br><br>
+            Ciudad de residencia: <br>
+            <select name="ciudad" class="form-lenght">
+                <option value="Pitalito">Pitalito</option>
+                <option value="San Agustin">San Agustín</option>
+                <option value="Bogota">Bogotá</option>
+                <option value="Neiva">Neiva</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Saladoblanco">Saladoblanco</option>
+                <option value="Elias">Elias</option>
+                <option value="Acevedo">Acevedo</option>
+                <option value="Otra">Otra</option>
+            </select>
+            <br><br>          
+        
+            <br>
+            <input class="btn_save" type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>

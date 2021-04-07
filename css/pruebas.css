@@ -1,0 +1,107 @@
+.d p{
+    letter-spacing: 0.02em; /*Espaciado de letras por defecto 0*/
+    word-spacing: 0.2em; /*Espaciado de palabras por defecto 0*/
+    line-height: 1.3em; /*Espaciado de lineas por defecto 1.2em*/
+    text-align: right; /*Alineación de texto: left, right, center, justify*/
+}
+.i p{
+    letter-spacing: 0.02em; /*Espaciado de letras por defecto 0*/
+    word-spacing: 0.2em; /*Espaciado de palabras por defecto 0*/
+    line-height: 1.3em; /*Espaciado de lineas por defecto 1.2em*/
+    text-align: left; /*Alineación de texto: left, right, center, justify*/
+}
+.c p{
+    letter-spacing: 0.02em; /*Espaciado de letras por defecto 0*/
+    word-spacing: 0.2em; /*Espaciado de palabras por defecto 0*/
+    line-height: 1.3em; /*Espaciado de lineas por defecto 1.2em*/
+    text-align: center; /*Alineación de texto: left, right, center, justify*/
+}
+.j p{
+    letter-spacing: 0.02em; /*Espaciado de letras por defecto 0*/
+    word-spacing: 0.2em; /*Espaciado de palabras por defecto 0*/
+    line-height: 1.3em; /*Espaciado de lineas por defecto 1.2em*/
+    text-align: justify; /*Alineación de texto: left, right, center, justify*/
+}
+.indentado p{
+    text-indent: 3.5em; /*Texto Indentado o también llamda sangría*/
+    text-align: justify;
+}
+.spanresaltado{
+    font-weight: bold;
+    font-size: 2em;
+}
+blockquote{
+    text-align: right;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: gray;
+    font-style: italic;
+}
+
+/* DIVS DISPLAY*/
+.content-divs{
+    height: auto;
+    width: 90vw;
+    margin: 20px auto;
+    
+}
+.contenedor{
+    height: 122px;
+    width: 216px;
+    display: inline-block;
+    margin-top: 0.2em;
+    margin-right: 8px;
+    margin-bottom: 0.2em;
+    margin-left: 8px;   
+    border-radius: 5%;
+}
+.contenedor2{
+    width: 20%;
+    display: inline-block;
+    color: rgb(226, 223, 223);
+    padding: 15px;
+    margin: 10px 10px;
+    text-align: justify;
+}
+.color1{
+    background-color: rgb(27, 69, 67);
+    border: 15px solid rgb(36, 102, 100);
+}
+.color2{
+    background-color: rgb(21, 80, 52);
+    border: 15px solid rgb(29, 114, 74);
+}
+.color3{
+    background-color: rgb(46, 44, 93);
+    border: 15px solid rgb(64, 62, 129);
+}
+.color4{
+    background-color: rgb(32, 35, 52);
+    border: 15px solid rgb(53, 57, 77);
+}
+.color5{
+    background-color: rgb(125, 55, 171);
+    border: 15px solid rgb(130, 79, 165);
+}
+.color6{
+    background-color: rgb(105, 176, 72);
+    border: 15px solid rgb(138, 189, 114);
+}
+.color7{
+    color: white;
+    background: rgb(92, 100, 167);
+    border: 10px solid rgb(54, 54, 148);
+    padding: 1.5em;
+}
+.contenedor-2{
+    height: 160px;
+    width: 280px;
+    background-color: yellowgreen;
+    display: inline-block;
+    margin-top: 0.2em;
+    margin-right: 0.2em;
+    margin-bottom: 0.2em;
+    margin-left: 0.2em; 
+    border-radius: 5%;
+}
+/*TERMINA DIVS DISPLAY*/

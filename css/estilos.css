@@ -150,14 +150,13 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
-    padding: 120px 0;
+    padding: 120px 0 120px 0;
     height: calc(100% - 350px) ;
     display: flex;
     position: relative;
 }
 .element-head-container{
-    width: 100%;
-    height: 100%;
+    margin-left: 30%;
 }
 .element-tittle-italic{
     color: white;
@@ -167,19 +166,14 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     font-family: 'Roboto Condensed';   
     text-shadow: 2px 2px 2px rgb(87, 87, 87);
 }
-.element-head-container-tittle{
-    margin-left: auto;
-    width: 70%;
-}
+
 .fijo{
     background-image: url('../img/headerbackground1.jpg');
     background-repeat: no-repeat;
     background-size: cover ;
     background-attachment: fixed;
     width: 100%;
-    height: 100%;  
-    padding-bottom: 120px;
-    min-height: 85vh;
+    height: 100vh;  
 }
 .fijo-text{
     background-image: url('../img/headerbackground1.jpg');
@@ -187,7 +181,7 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     background-size: cover ;
     background-attachment: fixed;
     width: 100%;
-    height: 100%; 
+    height: 75vh; 
 }
 .fixed_navbar{
     width: 100%;
@@ -237,8 +231,7 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     height: 100%;
 }
 .elemento-hight-container{
-    margin: auto;
-    max-width: 1240px;
+    padding: 90px 50px 120px 50px;
     height: calc(100% - 240px) ;
     display: flex;
     position: relative;
@@ -251,9 +244,9 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     align-items: center;
 }
 .elementor-image .m1{
-    max-width: 1240px;
     border-radius: 10px;
     width: 400px;
+    height: 450px;
 }
 .element-element-column{
     width: 49%;
@@ -261,13 +254,21 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     padding: 15px;
 }
 .element-container-content-text{
-    font-size: 100%;
+    font-size: 1.2em;
     color: #222222;
 }
 .element-container-content-text-white{
-    font-size: 100%;
+    font-size: 1.2em;
     color: rgb(247, 246, 242);
     font-family: 'Sarabun', sans-serif;
+}
+
+/* PRUEBA DE ESPACIADO ENTRE LETRAS, PALABRAS Y LINEAS */
+.element-container-content-text-white p, .element-container-content-text p{
+    letter-spacing: 0.02em; /*Espaciado de letras por defecto 0*/
+    word-spacing: 0.2em; /*Espaciado de palabras por defecto 0*/
+    line-height: 1.3em; /*Espaciado de lineas por defecto 1.2em*/
+    text-align: left; /*Alineación de texto: left, right, center, justify*/
 }
 .element-container-info{
     width: 100%;
@@ -289,21 +290,10 @@ header.fijo nav ul li a .nav-text, header.fijo-text nav ul li a .nav-text{
     height: 25px;
     width: 100%;
 }
-.element-image-content{
-    margin: auto;
-    max-width: 600px;
-}
 .img-round{
     border-radius: 72% 26% 46% 27%;
     width: 100%;
     max-width: 600px;
-}
-.big-text{
-    font-size: 1.3em;
-    color: #353535;
-}
-h2.sub-title{
-    font-size: 1.8em;
 }
 p{
     margin-bottom: 1.5em;
@@ -312,18 +302,18 @@ p{
 /* FOOTER  */
 .element-section-footer{
     overflow: hidden;
+    width: 100%;
     z-index: 20;
     background-color: rgb(110, 110, 110);
-    padding: 60px 50px 60px 50px;
     font-size: 1.1em;
 }
 .element-footer-container{
-    max-width: 1240px;
+    padding: 60px 50px 60px 50px;
     display: flex;
-    margin: auto;
 }
 .element-footer-container .element-section-column{
     display: inline-block;
+    height: 100%;
     width: 30%;
 }
 .elemente-section-row{
@@ -368,6 +358,7 @@ p{
 .element-section-sub-footer{
     overflow: hidden;
     padding: 20px 60px;
+    width: calc(100%-80px);
     height: 100%;
     position: relative;
     z-index: 20;
@@ -376,34 +367,8 @@ p{
     font-weight: 500;
     font-family: 'Sarabun', sans-serif;
 }
-.padding-auto{
-    padding: 150px 50px;
-}
-.contenido-nav, .header_content, .elemento-content, .nav-content, .sub-footer-content{
-    max-width: 1240px;
-    margin: auto;
-}
 
 
-textarea{
-    resize: none;
-}
-  
-  input:focus, input.form-control:focus,textarea:focus {
-    outline:none !important;
-    outline-width: 0 !important;
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-}
-
-@media screen and (max-width:750px){
-    .element-head-container-tittle{
-        margin: 0;
-        width: 100%;
-        text-align: center;
-    }
-}
 @media screen and (min-width:1000px){
     li a.open-close div.ocult{
         background: #024959;
@@ -417,13 +382,7 @@ textarea{
         height: 0px;
         float: right;
     }
-    .min-width{
-        display: block;
-        height: 0;
-        visibility: hidden;
-    }
 }
-
 @media screen and (max-width:1000px){
     header.fijo nav, header.fijo-text nav{
         width: 80%;
@@ -477,14 +436,14 @@ textarea{
     }
     .menu_bar .bt-menu{
         height: 110px;
-        width: 90vw;
+        width: 80vw;
         margin: 0 auto;
         display: block;
         color: #fff;
         text-decoration: none;
         font-weight: bold;
         font-size: 1.2em;       
-        text-shadow: 1px 1px 1px rgb(87, 87, 87);
+        text-shadow: 2px 2px 2px rgb(87, 87, 87);
        -moz-box-sizing: border-box;
     }
     .menu_bar .bt-menu .nav-logo{
@@ -493,11 +452,12 @@ textarea{
         background: none;
         display: inline-flex;
         height: 110px;
+        width: 180px;
         align-items: center;
     }
     .menu_bar .content-iconmenu{
         float:right;
-        font-size: 40px;
+        font-size: 50px;
         height: 100%;
         display: inline-flex;
         align-items: center;
@@ -509,7 +469,7 @@ textarea{
     }
     .content-icon-menu{
         float: right;
-        font-size: 40px;
+        font-size: 50px;
         height: 100%;
         display: inline-flex;
         align-items: center;
@@ -520,7 +480,7 @@ textarea{
         display: inline-flex;
         align-items: center;
         text-decoration: none;
-        text-shadow: 1px 1px 1px rgb(87, 87, 87);
+        text-shadow: 2px 2px 2px rgb(87, 87, 87);
     }
 
     .contenido{
@@ -528,63 +488,10 @@ textarea{
     }
     .element-element-column{
         width: 100%;
-        padding: 0;
-    }
-    .padding-auto{
-        padding: 70px 30px 50px 50px;
     }
     .elemento-hight-container{
-        display: block;      
-    }
-    .element-tittle-italic{
-        font-size: 3em;
-    }
-    .elementor-image{
-        width: 100%;
-        margin: 20px 0;
-    }
-    .elementor-image .m1{     
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-    .element-section-footer{
-        font-size: 100%;
-    }
-    .element-footer-container{
         display: block;
     }
-    .element-footer-container .element-section-column{
-        display: block;
-        width: 80%;
-        margin: auto;
-        text-align: center;
-    }
-    .element-footer-container .element-section-footer-nav{
-        padding: 0;
-        padding-top: 10px;
-        width: auto;
-    }
-    .hidden{
-        display: block;
-        height: 0;
-        visibility: hidden;
-    }
-}
-@media screen and (max-width:360px){
-    .element-tittle-italic{
-        font-size: 2.7em;
-    }
-    .elemento-hight-container{
-        display: block;        
-    }
-    .padding-auto, .element-section-footer{
-        padding: 20% 10%;
-    }
-    .sub-footer-content{
-        padding: 35px 30px;
-    }
-    
 }
 @keyframes MostrarArriba{
     0%{

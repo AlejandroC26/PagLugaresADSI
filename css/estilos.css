@@ -243,7 +243,6 @@ header.fijo-text nav ul li a .nav-text {
 .elemento-hight-container {
 	margin: auto;
 	max-width: 1240px;
-	height: calc(100% - 240px);
 	display: flex;
 	position: relative;
 }
@@ -276,9 +275,11 @@ header.fijo-text nav ul li a .nav-text {
 .element-container-info {
 	width: 100%;
 }
-.element-container-info h2 {
+.element-container-info h2,
+.h2-tittle {
 	color: #dbaf4e;
 	font-size: 2.5em;
+	display: block;
 }
 .element-container-info-white h2 {
 	color: rgb(228, 227, 224);
@@ -323,11 +324,10 @@ p {
 /* Tarjetas */
 .infor-card {
 	width: 300px;
-	height: 95%;
 	background: lightgray;
 	display: inline-block;
-	margin: 10px 10px;
-	padding: 15px;
+	margin: 12px 12px;
+	padding: 15px 20px;
 	border-radius: 2px;
 }
 .infor-card:hover {
@@ -419,6 +419,29 @@ p {
 .sub-footer-content {
 	max-width: 1240px;
 	margin: auto;
+}
+/* CARTAS */
+.content-card {
+}
+.content-card .plan-card {
+	display: inline-block;
+	text-align: center;
+	background: lightgray;
+	margin: 5px 12px;
+	border-radius: 5px;
+}
+.plan-card:hover {
+	opacity: 0.8;
+}
+.plan-card p {
+	font-size: 1em;
+	margin-bottom: 0;
+	padding: 10px 0;
+}
+.stars {
+	font-size: 1.1em;
+	color: #ffe341;
+	text-shadow: 2px 2px 2px rgb(87, 87, 87);
 }
 
 textarea {

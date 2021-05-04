@@ -330,12 +330,14 @@ p {
 	padding: 15px 20px;
 	border-radius: 2px;
 }
+.infor-card a{
+	text-decoration: none;
+	color: rgb(75, 74, 74);
+}
 .infor-card:hover {
 	opacity: 0.9;
 }
 .infor-card .tittle-card {
-	color: rgb(75, 74, 74);
-	padding: 5px 0;
 	font-weight: bold;
 }
 .infor-card .infor-card-img {

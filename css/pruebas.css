@@ -104,4 +104,43 @@ blockquote{
     margin-left: 0.2em; 
     border-radius: 5%;
 }
+.img-estorba{
+    height: 500px;
+}
+ .contenedor_imagenes{
+    padding: 0 120px;
+}
+.pos_left{
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.pos_right{
+    float: right;
+    margin: 0 0 20px 20px;
+}
+p{
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.h1-centrado{
+    text-align: center;
+}
+
+.enlace_ext{
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 1em;
+}
+/*
+.contenedor_normal, .contenedor_bajar{
+    margin: 0 10px;
+}
+.contenedor_normal{
+    display: inline-block;
+}
+.contenedor_bajar{
+    margin-top: 300px;
+    display: block;
+} */
 /*TERMINA DIVS DISPLAY*/

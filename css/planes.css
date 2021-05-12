@@ -1,0 +1,92 @@
+.table-prom {
+	width: 90%;
+	margin: 100px auto 0 auto;
+	border-collapse: collapse;
+}
+
+.table-prom thead tr th {
+	position: relative;
+}
+.table-prom tbody tr td {
+	background: #f5f5f5;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.table-prom tbody {
+	color: rgb(104, 104, 104);
+}
+.table-prom button {
+	display: block;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 10px;
+	font-size: 1.5em;
+	font-family: 'Roboto Condensed';
+	font-weight: bold;
+	padding: 8px;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	text-shadow: 0.5px 0.5px 0.5px rgb(73 73 73);
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+}
+.table-prom button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+.btn-plan-barato {
+	background: #9b9b9b;
+}
+.btn-plan-premium {
+	background: #ffb039;
+}
+.btn-plan-normal {
+	background: #ffe69b;
+}
+.plan {
+	padding: 10px 20px;
+	width: 33.3%;
+	border-radius: 5px;
+	color: white;
+	text-shadow: 1px 0.5px 0.5px rgb(73 73 73);
+}
+.plan-barato {
+	background: #757575;
+}
+.plan-barato .figura {
+	border-top: 50px solid #757575;
+}
+.plan-premium {
+	background: #ffb300;
+}
+.plan-normal {
+	background: #ffe082;
+}
+.precio {
+	font-family: Arial, Helvetica, sans-serif Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 2.5em;
+}
+.list-plane {
+	padding-right: 20px;
+	padding-left: 50px;
+	padding-bottom: 20px;
+}
+.list-plane li {
+	margin: 20px 0;
+}
+.list-plane li::marker {
+	color: #ff9800;
+	font-size: 1.2em;
+	text-shadow: 1px 1px 1px rgb(73 73 73);
+}
+.table-prom tbody tr .td-middle {
+	background: #eceff1;
+}
+.td-body {
+	vertical-align: top;
+	position: relative;
+	padding-bottom: 40px;
+}

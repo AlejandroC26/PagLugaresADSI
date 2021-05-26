@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/contactenos.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/consulta.css">
     <link rel="icon" href="img/mundo.png" type="image/png">
     <title>Lugares Fantásticos</title>
 </head>
@@ -49,101 +51,41 @@
         </div>     
         <div class="header_content">        
             <div class="element-head-container">
-                <span class="element-tittle-italic">Contacto</span> 
+                <span class="element-tittle-italic">Resultados Consulta</span> 
             </div>             
         </div>    
    </header>    
     <div class="contenido" id="contenido">
         <div class="padding-auto">
             <div class="elemento-hight-container">
-                <div class="element-content-form">
-                    <div class="element-container-info">
-                        <h2>¿Tiene dudas sobre nuestros servicios?</h2>                               
-                    </div>
-                    <div class="element-separador">
-                        <hr style="width: 25%; background: rgb(223, 171, 1); height: 4px; border: none; border-radius: 2px;">  
-                    </div>
-                    <div class="element-container-info big-text">
-                        <p>
-                            Nos alegra ver que te interesan los preciosos lugares que tenemos en nuestro catálogo, si tines dudas puedes ir a la pestaña Información, si tu duda aún no es solucionada entonces llena el siguiente formulario y contáctanos.
-                        </p>                   
-                    </div>
-                    <div class="element-container-info">
-                        <h2 class="sub-title">Formulario de contacto</h2>    
-                        <form action="registrar-info.php" method="get" class="content-form">
-                            <div class="content-wraper-options">
-                                <div class="wrapper-form-data">
-                                    <div class="input-data">
-                                      <input type="text" name="nombres" size="40" maxlength="50" required>
-                                        <div class="underline">
-                                        </div>
-                                      <label>Nombre</label>
-                                    </div>
-                                </div>
-                                <div class="wrapper-form-data">
-                                    <div class="input-data">
-                                        <input type="text" name="apellidos" size="40" maxlength="50" required>
-                                        <div class="underline">
-                                        </div>
-                                        <label>Apellido</label>
-                                    </div>
-                                </div>
-                            </div>                       
-                            <div class="wrapper-long-form-data">
-                                <div class="input-data">
-                                    <textarea name="peticion" cols="40" rows="5" class="form-lenght"></textarea>
-                                    <div class="underline">
-                                    </div>
-                                    <label>Ingrese su inquietud</label>
-                                </div>                       
-                            </div>                                                 
-                            <div class="content-wraper-options">
-                                <div class="input-option">
-                                    <label class="infor-form">Ciudad de residencia:</label>
-                                    <div class="content-options">
-                                        <select name="ciudad" class="form-lenght">
-                                            <option value="Pitalito">Pitalito</option>
-                                            <option value="San Agustin">San Agustín</option>
-                                            <option value="Bogota">Bogotá</option>
-                                            <option value="Neiva">Neiva</option>
-                                            <option value="Armenia">Armenia</option>
-                                            <option value="Saladoblanco">Saladoblanco</option>
-                                            <option value="Elias">Elias</option>
-                                            <option value="Acevedo">Acevedo</option>
-                                            <option value="Otra">Otra</option>
-                                        </select>
-                                    </div>                                   
-                                </div>                            
-                            </div>
-                            <div class="content-wraper-options">
-                                <div class="wrapper-form-options">
-                                    <div class="input-option">
-                                        <label class="infor-form">Género</label>
-                                        <div class="content-options">
-                                            <input type="radio" name="genero" value="masculino">Masculito<br>
-                                            <input type="radio" name="genero" value="femenino">Femenino<br>
-                                            <input type="radio" name="genero" value="indefinido">Indeterminado<br><br>
-                                        </div>                                   
-                                    </div>                            
-                                </div>
-                                <div class="wrapper-form-options">
-                                    <div class="input-option">
-                                        <label class="infor-form">Lugares que le gustaría visitar:</label>
-                                        <div class="content-options">
-                                            <input type="checkbox" name="dispositvo" value="sanagustin"> San Agustón<br>
-                                            <input type="checkbox" name="dispositvo" value="rivera"> Rivera<br>
-                                            <input type="checkbox" name="dispositvo" value="palermo"> Palermo<br>
-                                            <input type="checkbox" name="dispositvo" value="gigante"> Gigante<br><br>
-                                        </div>                                   
-                                    </div>                            
-                                </div>
-                            </div>  
-                            <div class="content-buton">
-                                <input class="btn_save" type="submit" value="Enviar">
-                            </div>                           
-                        </form>                       
-                    </div>
-                </div>
+                <table class="consulta-table">
+                    <thead>
+                        <th>Día</th>
+                        <th>Hora</th>
+                        <th>Médico</th>
+                        <th>IPS</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>26/05/2021</td>
+                            <td>5:00 p.m</td>
+                            <td>Gregory House</td>
+                            <td>Pitalito</td>
+                        </tr>
+                        <tr>
+                            <td>27/05/2021</td>
+                            <td>10:00 a.m</td>
+                            <td>Gregory House</td>
+                            <td>Pitalito</td>
+                        </tr>
+                        <tr>
+                            <td>28/05/2021</td>
+                            <td>11:00 a.m</td>
+                            <td>Gregory House</td>
+                            <td>Pitalito</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

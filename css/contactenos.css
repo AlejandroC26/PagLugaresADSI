@@ -23,6 +23,7 @@ legend {
 	padding: 5px;
 	border-radius: 5px;
 	border: solid 1px gray;
+	font-size: 0.9em;
 }
 select.form-lenght {
 	width: 99%;

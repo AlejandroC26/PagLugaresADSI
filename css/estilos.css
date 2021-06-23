@@ -496,6 +496,7 @@ textarea:focus {
 		margin: 0;
 		top: 0;
 		position: fixed;
+		overflow-y: scroll;
 		z-index: 1000;
 		background-color: rgb(255, 253, 249);
 	}

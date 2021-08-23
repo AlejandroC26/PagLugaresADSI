@@ -466,7 +466,11 @@ textarea:focus {
 		text-align: center;
 	}
 }
+<<<<<<< HEAD
 @media screen and (min-width: 1000px) {
+=======
+@media screen and (min-width: 2000px) {
+>>>>>>> 23dc029 (login)
 	li a.open-close div.ocult {
 		background: #024959;
 		overflow: hidden;
@@ -486,7 +490,11 @@ textarea:focus {
 	}
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 1000px) {
+=======
+@media screen and (max-width: 2000px) {
+>>>>>>> 23dc029 (login)
 	header.fijo nav,
 	header.fijo-text nav {
 		width: 80%;
@@ -522,9 +530,17 @@ textarea:focus {
 	header.fijo nav ul li.cross a,
 	header.fijo-text nav ul li.cross a {
 		color: #ecac20;
+<<<<<<< HEAD
 		float: right;
 		display: inline-flex;
 		align-items: center;
+=======
+		/* float: right; */
+		display: block;
+		align-items: center;
+		font-size: 2em;
+		text-align: right;
+>>>>>>> 23dc029 (login)
 	}
 
 	header.fijo nav ul li a .nav-text,
@@ -553,7 +569,11 @@ textarea:focus {
 		text-decoration: none;
 		font-weight: bold;
 		font-size: 1.2em;
+<<<<<<< HEAD
 		text-shadow: 1px 1px 1px rgb(87, 87, 87);
+=======
+		text-shadow: 1px 1px 2px black, 0 0 1em gray, 0 0 0.2em gray;
+>>>>>>> 23dc029 (login)
 		-moz-box-sizing: border-box;
 	}
 	.menu_bar .bt-menu .nav-logo {
@@ -589,7 +609,11 @@ textarea:focus {
 		display: inline-flex;
 		align-items: center;
 		text-decoration: none;
+<<<<<<< HEAD
 		text-shadow: 1px 1px 1px rgb(87, 87, 87);
+=======
+		text-shadow: 1px 1px 2px black, 0 0 1em gray, 0 0 0.2em gray;
+>>>>>>> 23dc029 (login)
 	}
 
 	.contenido {

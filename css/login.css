@@ -72,9 +72,18 @@ body {
 	margin: 1em 0;
 	cursor: pointer;
 }
+.forgot-password{
+	color: #0c4128;
+}
+.forgot-password:hover{
+	opacity: 0.8;
+}
 .login-box-body button:hover {
 	opacity: 0.8;
 	transition: all 0.2s;
+}
+input[type="text"], input[type="password"]{
+	outline: none;
 }
 ::placeholder {
 	color: #616161;

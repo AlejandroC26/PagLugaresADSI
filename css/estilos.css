@@ -490,10 +490,11 @@ textarea:focus {
 	header.fijo nav,
 	header.fijo-text nav {
 		width: 80%;
+		max-width: 500px;
 		height: 100%;
 		left: -100%;
 		margin: 0;
-		top: 0;
+		top: 40px;
 		position: fixed;
 		overflow-y: scroll;
 		z-index: 1000;
@@ -505,7 +506,7 @@ textarea:focus {
 		/*El display block se usa para que el li abarque todo el bloque de ancho*/
 		display: block;
 		float: none;
-		border-bottom: 1px solid rgb(150, 150, 150, 20%);
+		/* border-bottom: 1px solid rgb(150, 150, 150, 20%); */
 		border-right: 1px solid rgba(150, 150, 150, 20%);
 		height: 70px;
 	}
@@ -517,7 +518,13 @@ textarea:focus {
 	}
 	header.fijo nav ul li.cross,
 	header.fijo-text nav ul li.cross {
+		background-color: rgb(255, 253, 249);
+		width: 80%;
+		max-width: 500px;
 		height: 40px;
+		border-bottom: 1px solid rgb(150, 150, 150, 20%);
+		position: fixed;
+		top: 0px;
 	}
 	header.fijo nav ul li.cross a,
 	header.fijo-text nav ul li.cross a {

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-flex1{
+    display: flex;
+    background: darkcyan;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+.item-flex{
+    background-color: goldenrod;
+    color: white;
+    font-size: 1.5em; 
+    height: 200px;
+    /* width: 200px; */
+}
+
+.item-1{
+    flex-grow: 3;
+}
+.item-2{
+    flex-grow: 1;
+}
+.item-3{
+    flex-grow: 1;
+}
+.item-4{
+    flex-grow: 1;
+}
+.item-5{
+    flex-grow: 1;
+}
+.item-6{
+    flex-grow: 1;
+}

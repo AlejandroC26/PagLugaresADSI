@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-flex1{
+    display: flex;
+    background: darkcyan;
+    /* flex-flow: row wrap; */
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+.item-flex{
+    background-color: goldenrod;
+    color: white;
+    font-size: 1.5em; 
+    height: 250px;
+    width: 250px;
+}
+
+.item-1{
+    flex-shrink: 4;
+}
+.item-2{
+    flex-shrink: 1;
+}
+.item-3{
+    flex-shrink: 2;
+}
+.item-4{
+    flex-shrink: 1;
+}
+.item-5{
+    flex-shrink: 1;
+}
+.item-6{
+    flex-shrink: 1;
+}

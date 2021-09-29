@@ -79,7 +79,7 @@
 	border-radius: 5px;
 	grid-area: image;
 	margin-bottom: 100px;
-	background-position: center center;
+	background-position: right center;
 	background-repeat: no-repeat;
 }
 
@@ -105,6 +105,10 @@
 	margin-bottom: 30px;
 	line-height: 1.9em;
 }
+.main-article .article-text p{
+	font-size: .9em;
+	color: rgb(129, 129, 129);
+}
 .footer {
 	background: salmon;
 	grid-area: footer;
@@ -119,7 +123,10 @@
 	margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
+	.contain-publi {
+		background-position: -1000px center;
+	}
 	.header .menu .nav-menu {
 		display: none;
 	}
@@ -127,7 +134,10 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 495px) {
+	.contain-publi {
+		background-position: -1200px center;
+	}
 	.page-content {
 		grid-template:
 			'main   main main' auto

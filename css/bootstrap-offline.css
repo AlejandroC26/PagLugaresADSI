@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+}
+nav {
+  position: fixed;
+  height: 100%;
+  width: 18%;
+  background-color:  rgb(1, 139, 211);
+  font-size: 1.4em;
+  overflow: hidden;
+}
+.container-md {
+  margin: 50px;
+  border: 1px solid rgba(64, 64, 64, .4);
+  padding: 30px;
+  border-radius: 4px;
+}
+ul{
+  margin-top: 80px;
+  list-style: none;
+  margin-right: 30px;
+}
+li{
+  padding: 10px 5px;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+a:hover{
+  color: white;
+  text-shadow: 1px 1px 15px white;
+  transition: all 0.3s;
+}
+.max-height{
+  padding: 1rem .75rem;
+  height: calc(3.5rem + 2px);
+  line-height: 1.25;
+}

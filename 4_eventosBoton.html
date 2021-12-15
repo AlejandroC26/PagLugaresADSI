@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnClick</title>
+    <style>
+        div.boton {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        div#mover{
+            padding: 10px;
+            background-color: red;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 20;
+            transition: all 0.5s;
+        }
+        div#mover button{
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="boton">
+        <button onclick="saludo()">Saludo</button>
+    </div>
+    <img src="js/img/gaviota2.jpg" onmouseover="src='js/img/gaviota.jpeg'" onmouseout="src='js/img/gaviota2.jpg'">
+    <img src="js/img/boton.jpg" onmouseover="alert('PUMMMM!!!!')">
+    <div id="mover">
+        <h1>Inserte pregunta</h1>
+        <button onclick="cerrar()">Si</button>
+        <button onclick="random()">No</button>
+    </div>
+</body>
+<script src="./js/9_onClick.js"></script>
+</html>

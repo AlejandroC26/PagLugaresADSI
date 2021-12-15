@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Focus</title>
+</head>
+<body>
+    <body>
+        Email: <br>
+        <input class="tam-fuente" type="text" size="30"
+        onfocus="this.style.background='red'"
+        onblur="this.style.background='white'">
+        <br>
+        <br>
+        <h3>Validar si el usuario digitó información</h3>
+        <form onsubmit="validarInfo('numeroDocumento')">
+        Numero de Documento:
+        <input type="text" id="numeroDocumento">
+        <input type="submit" value="Enviar">
+        <br>
+        <form>
+            Código Dnae:
+            <input type="text" id="codigo" onblur="buscarCiudad();">
+            Ciudad:
+            <input type="text" id="ciudad">
+        </form>
+        </form>
+    </body>
+</body>
+<script src='./js/10_validarInfo.js'></script>
+</html>

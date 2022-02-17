@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- <H1>Ejercicios</H1>
+    <img src="img/casaPapel850x1260.jpg" style="width: 50px; height: 50px;" onmouseover="alerta()">
+    <img id="ejercicioInvisible" src="img/casaPapel850x1260.jpg" style="width: 50px; height: 50px;" onmouseover="volverInvisible()"> -->
+    <!---------------------------->
+    <div class="navbar">
+
+    </div>
+    <div class="container">
+        <div class="principal-image">
+            <img id="principal-image" src="img/peakyBlinders1200x675.jpg">
+        </div>
+        <div class="container-images" onmouseleave="imgLeave()">
+            <div><img onmouseover="imgOver('img/peakyBlinders1200x675.jpg')" src="img/peakyBlinders481x720.jpg" ></div>
+            <div><img onmouseover="imgOver('img/casaPapel1366_2000.jpeg')" src="img/casaPapel850x1260.jpg" ></div>
+            <div><img onmouseover="imgOver('img/squidGame1600x900.jpg')" src="img/squidGame640x960.jpg" ></div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    /* function alerta(){
+        alert('Hola');
+    } */
+    function imgOver(img){
+        var image = document.getElementById('principal-image');
+        image.src = img;
+    }
+    function imgLeave(){
+        var image = document.getElementById('principal-image');
+        image.src = 'img/peakyBlinders1200x675.jpg';
+    }
+    /* function volverInvisible(){
+        document.getElementById('ejercicioInvisible').className = 'invisible';
+    } */
+</script>

@@ -1,0 +1,114 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.container-product{
+    overflow: hidden;
+    width: calc(95% - 20px);
+    max-width: 500px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template:
+    'total        total ' 
+    'pay          pay'
+    'image        info' 
+    'control button ' ;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(160, 160, 160);
+}
+.total {
+    grid-area: total;
+}
+.pay {
+    grid-area: pay;
+}
+.image {
+    width: 100%;
+    max-width: 150px;
+    grid-area: image;
+}
+.image > img {
+    width: 100%;
+}
+.info {
+    width: 100%;
+    max-width: 280px;
+    grid-area: info;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+}
+.control-area {
+    grid-area: control;
+}
+.button {
+    grid-area: button;
+}
+.control {
+    width: 150px;
+    display: inline-flex;
+}
+.control button{
+    border-radius: 0;
+    border: solid 1px rgb(168, 168, 168);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 40px;
+}
+.control button:first-child{
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.control button:last-child{
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.number-product {
+    color: rgb(24, 120, 230);
+    width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px rgb(168, 168, 168);
+    border-bottom: solid 1px rgb(168, 168, 168);
+}
+.bigNum{
+    font-size: 1.3em;
+}
+.btn {
+    cursor: pointer;
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 3px;
+    border: none;
+    background: none;
+    transition: box-shadow .5s, background-color 1s;
+    box-shadow: 0px 0px 2px rgb(160, 160, 160);
+}
+.btn:hover{
+    box-shadow: 0px 0px 5px rgb(255, 137, 2);
+}
+.pay-btn{
+    background-color: rgb(243, 174, 0);
+    font-size: 1em;
+}
+.white-btn{
+    box-shadow: 0px 0px 2px rgb(160, 160, 160);
+}
+.white-btn:hover{
+    box-shadow: 0px 0px 5px rgb(0, 171, 201);
+    background-color: rgb(242, 253, 255);
+}
+.mt{
+    margin-top: 5px;
+}
+@media screen and (max-width: 645px) {
+    .container-product{
+        margin: 5px auto;
+    }
+}

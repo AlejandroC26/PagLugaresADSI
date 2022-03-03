@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-container{
+    box-shadow: 0 0 10px rgb(216, 216, 216);
+    width: 90%;
+    max-width: 750px;
+    box-sizing: border-box;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    margin: 40px auto;
+    border-radius: 5px;
+    border: solid 2px rgb(190, 190, 190);
+    grid-template: 
+    'titulo      titulo      titulo     titulo' 
+    'codigo      cod_input   cod_input  cod_input' 
+    'descripcion desc_input  desc_input desc_input' 
+    'valorUnit   val_input   unidStock  unidStock_input' 
+    'button      button      button     button'  /
+    1fr          2fr         1fr        2fr;
+}
+.form-container > div{
+    display: grid;
+    align-items: center;
+}
+.form-container > div > input {
+    height: 2em;
+    padding: 1px 10px;
+}
+.titulo{
+    grid-area: titulo;
+    text-align: center;
+}
+.codigo {
+    grid-area: codigo;
+}
+.codigoInput{
+    grid-area: cod_input;
+}
+.description{
+    grid-area: descripcion;
+}
+.descriptionInput{
+    grid-area: desc_input;
+}
+.valorUnitario{
+    grid-area: valorUnit;
+}
+.valorUnitInput{
+    grid-area: val_input;
+}
+.unidStock{
+    grid-area: unidStock;
+}
+.uniStockInput{
+    grid-area: unidStock_input;
+}
+.buttonArea{
+    grid-area: button;
+}
+.buttonArea > button{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    background-color: rgb(107, 131, 197);
+    transition: background-color .3s;
+    cursor: pointer;
+}
+.buttonArea > button:hover{
+    background-color: rgb(125, 144, 197);
+}
+.table-style{
+    width: 90%;
+    max-width: 750px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgb(185, 185, 185);
+}
+.table-style thead tr{
+    background-color: rgb(107, 131, 197);
+    color: #fff;
+}
+.table-style thead tr th{
+    text-align: center;
+}
+.table-style thead tr th,
+.table-style tbody tr td {
+    border: solid 2px rgb(0, 21, 49);
+    padding: 5px;
+}

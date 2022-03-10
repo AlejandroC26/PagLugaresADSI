@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #f1f1f1;
+}
+:root {
+    --main-text-color: #333;
+    --place-holder-color: #b3b3b3;
+    --shadow-color: #b3b3b3;
+    --light-color: #f1f1f1;
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(255, 241, 89);
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 60px 1fr 50px 50px;
+    box-sizing: border-box;
+}
+.navbar > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mercado-logo{
+    background-size: 44px 31px;
+    background-image: url('https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.9/mercadolibre/logo__small@2x.png');
+    width: 44px;
+    height: 31px;
+}
+
+.buscador .nav-search{
+    width: 100%;
+    height: 30px;
+    padding: 3px 5px 5px 45px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 0 1px #b3b3b3;
+    box-sizing: border-box;
+}
+.buscador .nav-search{
+    position: relative;
+}
+.buscador .nav-search span {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 1.2em;
+    color: #dadada;
+}
+.buscador .nav-search input[type = 'text']{
+    width: 100%;
+    color: var(--main-text-color);
+    height: 100%;
+    font-size: 1em;
+    border: none;
+    outline: none;
+}
+.buscador .nav-search > input[type = 'text']::placeholder { 
+    color: var(--place-holder-color); 
+}
+.cart{
+    font-size: 1.5em;
+}
+.menu{
+    font-size: 1.5em;
+}
+.menu,
+.cart{
+    color: var(--main-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-content{
+    box-sizing: border-box;
+}
+.main-content > h3 {
+    margin: 5px 10px;
+}
+.product-wrapper{
+    padding: 10px 0 0 0;
+    background-color: #ffff;
+    box-shadow: 0 0 5px #b3b3b3;
+}
+.product{
+    height: 196px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: .45fr 1.2fr;
+    border-bottom: solid 2px var(--light-color);
+}
+.product > .product-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0 10px;
+    overflow: hidden;
+}
+.product > .product-image > img{
+    height: 195px;
+}
+.product > .product-info {
+    margin: 0 10px;
+}
+.product > .product-info > .product-name{
+    color: rgb(105, 105, 105);
+    font-size: 1em;
+    padding: 0 0 1px 0;
+}
+.product > .product-info > .product-price{
+    font-size: 1.2em;
+    padding: 0 0 5px 0;
+}
+.product > .product-info > .product-cuotas{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    font-size: .8em;
+}
+.product > .product-info > .product-cuotas > .subir{
+    font-size: .9em;
+}
+.product > .product-info > .product-envio span {
+    font-size: .8em;
+    color: #2f9b47;
+}

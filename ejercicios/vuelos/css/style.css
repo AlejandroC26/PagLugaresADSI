@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --text-color: #414141;
+    --blue-color: rgb(18, 18, 150);
+}
+body {
+    background-color: rgb(235, 235, 252);
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(255, 241, 89);
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 60px 1fr 50px;
+    box-sizing: border-box;
+}
+.menu {
+    font-size: 1.5em;
+}
+.navbar > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-content{
+    padding: 10px 5px;
+    display: grid;
+    grid-gap: 10px;
+}
+.vuelo {
+    box-shadow: 0 1.2px 5px #adadad;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    color: var(--text-color);
+    background-color: #fff;
+    display: grid;
+    grid-template: 
+    'mas-economico  empty      empty' 15px 
+    'hora-salida    duracion   hora-llegada' 25px 
+    'izquierda      tiempo     derecha'  35px
+    'directo        directo      desde'/
+    1fr             1fr        1fr;
+}
+.vuelo > div {
+    padding: 2px 0 3px 0;
+}
+.mas-economico {
+    grid-area: mas-economico;
+}
+.mas-economico > span {
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: #fff;
+    padding: 5px;
+    padding-right: 20px;
+    background-color: rgb(23, 136, 127);
+}
+.hora-salida,
+.hora-llegada,
+.price{
+    color: var(--blue-color);
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.hora-salida {
+    grid-area: hora-salida;
+}
+.duracion {
+    color: var(--text-color);
+    grid-area: duracion;
+}
+
+.hora-llegada {
+    color: var(--blue-color);
+    grid-area: hora-llegada;
+}
+.tiempo {
+    grid-area: tiempo;
+    font-size: .9rem;
+}
+.izquierda {
+    grid-area: izquierda;
+}
+.derecha {
+    grid-area: derecha;
+}
+.directo {
+    grid-area: directo;
+}
+.desde {
+    flex-direction: column;
+    grid-area: desde;
+}
+.desde > div{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.directo, 
+.desde {
+    border-top: 2px #b1b1b1 solid;
+}
+
+.duracion,
+.tiempo{
+    display: flex;
+    justify-content: center;
+}
+
+.hora-llegada,
+.derecha,
+.desde {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.adultos-desde{
+    font-size: .9rem;
+    color: rgb(26, 156, 33);
+}

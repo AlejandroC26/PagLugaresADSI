@@ -91,7 +91,7 @@ body{
     height: 196px;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: .45fr 1.2fr;
+    grid-template-columns: .45fr 1fr;
     border-bottom: solid 2px var(--light-color);
 }
 .product > .product-image{

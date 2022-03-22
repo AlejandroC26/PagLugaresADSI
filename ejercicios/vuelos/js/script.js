@@ -13,6 +13,8 @@ let horaLlegada1 = new Date(2022, 03, 18, 11, 25, 0);
 let horaSalida2 = new Date(2022, 03, 25, 8, 20, 0);
 let horaLlegada2 = new Date(2022, 03, 25, 11, 40, 0);
 
+
+
 let vuelos = [
     {
         horaSalida : horaSalida1,
@@ -41,10 +43,11 @@ function InsertarInfo(lugarDestino, horaSalida, horaLlegada, precio){
 
     let priceTXT = 'cop'+numberFormat.format(precio);
 
-
-    let duracionTiempo = 'asdasd';
-
-    /* duracionTiempo = duracionTiempo.getHours() + "h " + duracionTiempo.getMinutes()+'Min'; */
+    let diff = horaLlegada.getTime() - horaSalida.getTime();
+    let minutos = (diff/(1000*60));
+    let horas = parseInt(minutos/60);
+    let minutosrestantes = minutos - (horas*60);
+    duracionTiempo = horas + 'h y '+minutosrestantes+'m';
 
     contenedor = document.getElementById('main-content');
     vueloDiv = document.createElement('div');
@@ -114,26 +117,6 @@ function InsertarInfo(lugarDestino, horaSalida, horaLlegada, precio){
     vueloDiv.appendChild(precioTotalDiv);
 
     contenedor.appendChild(vueloDiv);
-    
-    /* 
-
-    div = document.createElement('div');
-    destino = document.createElement('div');
-    horaSalida = document.createElement('div');
-    horaLlegada = document.createElement('div');
-
-    destinoTXT = document.createTextNode(lugarDestino);
-    horaSalidaTXT = document.createTextNode(hSalida);
-    horaLlegadaTXT = document.createTextNode(hLlegada);
-
-    destino.appendChild(destinoTXT);
-    horaSalida.appendChild(horaSalidaTXT);
-    horaLlegada.appendChild(horaLlegadaTXT);
-
-    div.appendChild(destino);
-    div.appendChild(horaSalida);
-    div.appendChild(horaLlegada);
-    contenedor.appendChild(div); */
 }
 
 vuelos.forEach(vuelo => {

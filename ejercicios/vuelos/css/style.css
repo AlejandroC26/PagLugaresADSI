@@ -13,7 +13,8 @@ body {
 .navbar{
     height: 50px;
     width: 100%;
-    background-color: rgb(255, 241, 89);
+    background-color: var(--blue-color);
+    color: #fff;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 60px 1fr 50px;

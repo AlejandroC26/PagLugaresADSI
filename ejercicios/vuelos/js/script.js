@@ -13,6 +13,10 @@ let horaLlegada1 = new Date(2022, 03, 18, 11, 25, 0);
 let horaSalida2 = new Date(2022, 03, 25, 8, 20, 0);
 let horaLlegada2 = new Date(2022, 03, 25, 11, 40, 0);
 
+/* ====================================================== */
+let horaSalida3 = new Date(2022, 03, 25, 9, 20, 0);
+let horaLlegada3 = new Date(2022, 03, 25, 11, 30, 0);
+
 
 
 let vuelos = [
@@ -26,6 +30,12 @@ let vuelos = [
         horaSalida : horaSalida2,
         horaLlegada : horaLlegada2,
         destino : "ADZ",
+        precio : 562000
+    },
+    {
+        horaSalida : horaSalida3,
+        horaLlegada : horaLlegada3,
+        destino : "COA",
         precio : 562000
     }
 ];

@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+    height: 50px;
+}
+.navbar {
+    height: 50px;
+    gap: 5px;
+    display: grid;
+    grid-template: 'burguer logo search cart user' 50px /
+                    60px    auto 45px   60px 60px;
+}
+.burguer,
+.logo, 
+.search-box,
+.cart,
+.user {
+    font-size: 1.7em;
+    display: flex;
+    align-items: center;
+}
+.burguer {
+    grid-area: burguer;
+    justify-content: center;
+}
+.logo {grid-area: logo;}
+.logo img {
+    height: 30px;
+}
+.search-box {
+    cursor: pointer;
+    grid-area: search;
+    font-size: 1.2rem;
+    color: rgb(59, 59, 59);
+}
+.cart, .user {
+    justify-content: center;
+}
+.cart {grid-area: cart}
+.cart .cart-articles {
+    width: 18px;
+    height: 18px;
+    background-color:rgb(231, 0, 0);
+    border-radius: 50%;
+    font-size: .8rem;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+.user {grid-area: user}
+.envio {
+    height: 80px;
+    background-color: rgb(55, 138, 194);
+}
+
+.search {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 5px;
+    display: grid;
+    grid-template: 'logo input close' auto /
+                    50px auto  50px;
+}
+.search-logo,
+.search-input,
+.close-btn {
+    color: rgb(56, 56, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+.close-btn{
+    cursor: pointer;
+}
+.search-input > input[type='text']{
+    font-size: .95rem;
+    width: 100%;
+    outline: none;
+    border: none;
+}

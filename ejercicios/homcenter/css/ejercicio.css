@@ -1,0 +1,98 @@
+.main-content {
+    display: grid;
+    gap: 20px;
+}
+.main-content > div > div{
+    margin-bottom: 5px;
+}
+.div1,
+.div2{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+#example1 .div1 {
+    transition: width 1s, height 1.5s;
+  }
+#example1 .div1:hover {
+    width: 300px;
+    height: 300px;
+}
+
+#example1 input[type=text] {
+    width: 100px;
+    transition: width .35s ease-in-out;
+}
+
+#example1 input[type=text]:focus {
+    width: 250px;
+}
+
+
+
+#example2 .div1 {
+    transition: background-color .5s;
+    transition-delay: 1s;
+}
+
+#example2 .div1:hover{
+    background-color: yellow;
+}
+#example2 .div2 {
+    transition: width 2s, height 1s ease-in-out;
+    transition-delay: .5s;
+}
+
+#example2 .div2:hover {
+    width: 200px;
+    height: 300px;
+}
+
+#example3 .div1 {
+    transition-property: width, height;
+    transition-duration: 2s;
+}
+#example3 .div2 {
+    transition-property: background-color;
+    transition-duration: 3s;
+}
+
+#example3 .div1:hover {
+    width: 300px;
+    height: 200px;
+}
+#example3 .div2:hover {
+    background-color: blue;
+}
+
+#example4 .div1,
+#example4 .div2{
+    transition-property: width;
+    transition-duration: 5s;
+}
+
+#example4 .div1:hover{
+    width: 500px;
+    transition-timing-function: linear;
+}
+#example4 .div2:hover{
+    width: 500px;
+    transition-timing-function: ease-in-out	;
+}
+
+.circulo {
+    width: 200px;
+    height: 200px;
+    /* border-radius: 100% 0 0 0; */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    clip-path: circle(50% at bottom right);
+    background-color: #000;
+    transition: background-color .3s linear, clip-path .5s;
+}
+.circulo:hover {
+    cursor: pointer;
+    clip-path: circle(100% at bottom right);
+    background-color: rgb(192, 192, 192);
+}
